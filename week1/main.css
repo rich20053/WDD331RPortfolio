@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+html {
+    background-color: black;
+}
+  
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #333;
+    background-color: white;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-family: 'Lora', serif;
+}
+
+h2 a:link, h2 a:visited, h2 a:active {
+    color: #666;   
+    text-decoration: none;
+    font-size: 1.2rem;
+} 
+
+img {
+    width: 100%;
+}
+
+li {
+    padding: 10px;
+    text-align: center;
+}
+    
+header {
+    background-color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+header a:link, header a:visited {
+    color: #666;
+    text-decoration: none;
+}  
+
+header h1 {
+    text-align: center;
+    margin-right: 15px;
+    font-size: 3rem;
+}
+
+header hr {
+    margin: 15px;
+}
+
+header nav {
+    border-top: 1px solid #d0d0d0;
+    border-bottom: 1px solid #d0d0d0;
+    font-family: 'Lora', serif;
+}
+
+header nav a:hover {
+    color: #00ddff;
+    text-decoration: none;
+}  
+
+header nav a:active {
+    color: #DEB887;
+    text-decoration: none;
+}  
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    text-align: center;
+    color: #666;
+    font-variant-caps: all-small-caps;
+    font-size: 1.3rem;
+    padding: 5px;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+}
+
+article {
+    background-color: white;
+    margin: 0;
+}
+
+.post-date {
+    text-align: right; 
+    font-size: 2rem;  
+    font-family: 'Lora', serif;
+    font-variant-caps: all-small-caps;
+    font-weight: bold;
+    border-bottom: 1px solid #d0d0d0;
+    padding: 5px;
+}
+
+section p a:link, section p a:visited {
+    color: #666;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+@media screen and (min-width: 540px) { 
+ 
+    header ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    header ul li {
+        padding-left: 8px;
+    }
+
+    article {
+        display: grid;
+        grid-template-columns: 25% 75%;
+    }
+
+    .post-date {
+        border-right: 1px solid #d0d0d0;
+        border-bottom: none;
+        font-size: 1.6rem;
+        padding: 10px;
+    }
+
+    figure {
+        width: 40%;
+   }
+
+    figure img {
+        justify-self: center;
+        margin-inline-start: 80px;
+    }
+
+    h2 {
+        margin: 0;
+        padding: 10px;
+        font-weight: normal;
+    }
+
+    section p {
+        padding: 10px;
+        font-size: .8rem;
+        font-weight: bold;
+    }
+
+}

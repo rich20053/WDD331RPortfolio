@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+
+  <body>
+    <div id="page">
+      <header class="top-of-page">
+        <div class="page-nbr">
+            <p>126</p>
+        </div>
+        <div class="chapter">
+           <p>Chapter 6</p>
+        </div>
+      </header>
+      <main>
+        <section class="section page125">
+            <div>
+                <div class="section-text">
+                  <p>
+                    For example, say your developers have come up with the perfect amortization 
+                    program and you want to install it on the workgroup server for other systems 
+                    to remotely mount and use. Because this is a third-party or custom application, 
+                    the logical place for it is in /usr/local/appname, possibly with a link to the 
+                    program binary in the /usr/local/bin directory (because that's in the path).
+                  </p>
+                </div>
+                <div class="section-alert">
+                    <h4>Alert</h4>
+                    <p>
+                        If given a choice between putting the software package bigprog in the 
+                        /usr/local/bigprog section and the /opt/bigprog section, it's hard to 
+                        choose. Read any relevant exam question closely--the main difference 
+                        being that the /opt section is not considered to be sharable, whereas 
+                        the /usr section is often shared and mounted by client systems.                        
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="section page126">
+            <div>
+                <div class="section-header">
+                    <h2>File Management Commands</h2>
+                </div>
+                <div class="section-text">
+                  <p>A major section of the 101 exam is dedicated to how to run commands properly 
+                      with the right options and arguments. As a good sysadmin, you'll be expected 
+                      to know how to create, delete, edit, set permissions on, display, move, copy, 
+                      and determine the type of files and programs.
+                  </p>
+                </div>
+                <div class="section-alert">
+                    <h4>Alert</h4>
+                    <p>
+                        You must be able to pick proper and working commands out of lists of 
+                        possibilities, type in appropriate strings in fill-in-the-blank boxes, 
+                        and in general show that you've run the programs and utilities in 
+                        question.
+                    </p>
+                </div>
+                <div class="section-tips">
+                    <h3 class="tip-header">
+                        Tips for working with Linux files
+                    </h3>
+                    <p>
+                        Because most users and sysadmins come from a Windows or other OS background, 
+                        a quick set of recommendations for the less-experienced can be of help here:
+                    </p>
+                    <ul class="tip-list">
+                        <li>► <strong>Hidden files aren't really hidden</strong> - They just begin with a ., 
+                            such as the .bashrc and .bash_profile files. These are not viewable 
+                            by normal users with conventional commands and switches and aren't 
+                            deleted by commands such as rm -f *.*.
+                        </li>
+                        <li>► <strong>Filenames can contain multiple periods or no period characters</strong> - 
+                            The filenames this.is.a.long.file and thisisalongfile are perfectly 
+                            reasonable and possible.
+                        </li>
+                        <li>► <strong>Spaces in filenames look nice, but are a pain to type</strong> - Use an _ 
+                            or a - instead of spaces because it's neater and easier than prefixing 
+                            all spaces with a \. (To display a space in a filename, the system 
+                            shows a space prefixes with a backslash.)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
+
+
+

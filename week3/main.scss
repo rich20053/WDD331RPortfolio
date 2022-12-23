@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+$html_background_color: black;
+$body_background_color: white;
+$body_font_color: #333;
+$link_color: #666;
+$border_color: #d0d0d0;
+
+@mixin links {
+    color: $link_color;
+    text-decoration: none;
+}
+
+html {
+    background-color: $html_background_color;
+}
+  
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    color: $body_font_color;
+    background-color: $body_background_color;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h1, h3 {
+    font-family: 'Lora', serif;
+}
+
+h2 {
+    font-family: 'Lora', serif; 
+    a:link, a:visited, a:active {
+        @include links();
+        font-size: 1.2rem;
+    }
+} 
+
+img {
+    width: 100%;
+}
+
+li {
+    padding: 10px;
+    text-align: center;
+}
+    
+header {
+    background-color: $body_background_color;
+    margin: 0;
+    padding: 20px;
+    a:link, a:visited {
+        @include links();
+    }
+    h1 {
+        text-align: center;
+        margin-right: 15px;
+        font-size: 3rem;
+    }
+    hr {
+        margin: 15px;
+    }
+    nav {
+        border-top: 1px solid $border_color;
+        border-bottom: 1px solid $border_color;
+        font-family: 'Lora', serif;
+        a:hover {
+            color: #00ddff;
+            text-decoration: none;
+        }
+        a:active {
+            color: #DEB887;
+            text-decoration: none;
+        }
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+            text-align: center;
+            color: $link_color;
+            font-variant-caps: all-small-caps;
+            font-size: 1.3rem;
+            padding: 5px;
+        }    
+    }        
+}  
+
+main {
+    background-color: $body_background_color;
+    padding: 20px;
+}
+
+article {
+    background-color: $body_background_color;
+    margin: 0;
+}
+
+.post-date {
+    text-align: right; 
+    font-size: 2rem;  
+    font-family: 'Lora', serif;
+    font-variant-caps: all-small-caps;
+    font-weight: bold;
+    border-bottom: 1px solid $border_color;
+    padding: 5px;
+}
+
+section p a:link, section p a:visited {
+    @include links();
+    font-weight: normal;    
+}
+
+@media screen and (min-width: 540px) { 
+ 
+    header ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        li {
+            padding-left: 8px;
+        }
+    }
+
+    article {
+        display: grid;
+        grid-template-columns: 25% 75%;
+    }
+
+    .post-date {
+        border-right: 1px solid $border_color;
+        border-bottom: none;
+        font-size: 1.6rem;
+        padding: 10px;
+    }
+
+    figure {
+        width: 40%;
+        img {
+            justify-self: center;
+            margin-inline-start: 80px;
+        }
+    }
+
+    h2 {
+        margin: 0;
+        padding: 10px;
+        font-weight: normal;
+    }
+
+    section p {
+        padding: 10px;
+        font-size: .8rem;
+        font-weight: bold;
+    }
+
+}

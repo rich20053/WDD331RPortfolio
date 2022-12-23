@@ -1,0 +1,112 @@
+/*
+$dark-color: black;
+$mid-color: lighten($dark-color, 20);
+$light-color: lighten($mid-color, 20);
+$accent-color2: saturate($mid-color, 20);
+$highlight-color: lighten(saturate($mid-color, 20), 20);
+*/
+body {
+  background-color: #000000;
+  color: #ff1a9c;
+  max-width: 680px;
+  margin: auto;
+}
+
+h1 {
+  color: yellow;
+  font-family: Georgia, serif;
+  font-size: 36px;
+}
+
+h2 {
+  color: yellow;
+  font-family: Georgia, serif;
+  font-size: 18px;
+}
+
+h3 {
+  color: yellow;
+  font-family: Georgia, serif;
+  font-size: 15px;
+}
+
+h4 {
+  color: yellow;
+  font-family: Georgia, serif;
+  font-size: 15px;
+}
+
+p {
+  color: #fff71a;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 15px;
+}
+
+a {
+  color: #ff1a9c;
+  background-color: #7d1aff;
+}
+
+.primary {
+  color: #fff71a;
+  background-color: #000000;
+  border: 1px solid #fff71a;
+}
+
+.accent1 {
+  color: #ff1a9c;
+  background-color: #fff71a;
+}
+
+.accent2 {
+  color: #000000;
+  background-color: #ff1a9c;
+}
+
+.accent3 {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.text-dark {
+  color: #000000;
+  background-color: #7d1aff;
+}
+
+.fonts {
+  background-color: #7d1aff;
+  padding: 30px;
+  border: 2px solid #fff71a;
+}
+
+.colors {
+  background-color: #000000;
+  color: #fff71a;
+  border: 2px solid #fff71a;
+  padding: 30px;
+}
+
+.swatch {
+  height: 50px;
+}
+
+.elements {
+  background-color: #ff1a9c;
+  color: #000000;
+  border: 2px solid #fff71a;
+  padding: 30px;
+}
+
+.element {
+  color: #fff71a;
+  background-color: #7d1aff;
+  border: 1px solid #fff71a;
+  padding: 20px;
+}
+
+.colordiv {
+  display: flex;
+  flex-direction: row;
+}
+
+/*# sourceMappingURL=style-pattern.css.map */

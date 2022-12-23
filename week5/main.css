@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+ }
+ 
+ html,
+ body {
+    height: 100%;
+ }
+ 
+ body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+ }
+ 
+ .container {
+    height: 25vmin;
+    width: 25vmin;
+    background-color: teal;
+ }
+ 
+ .container-one {
+    padding: 1vmin;
+ }
+ 
+ .orbiting-circle {
+    height: 25%;
+    width: 25%;
+    background-color: red;
+    border-radius: 50%;
+    animation: orbit 3s linear infinite;
+ }
+ 
+ @keyframes orbit {
+    0% { transform: translate(0,0); }
+    5% { transform: translate(0,0); } /* don't change for 5% of the time...pause */
+    25% { transform: translate(300%,0%); }
+    30% { transform: translate(300%,0%); } /* pause */
+    50% { transform: translate(300%,300%); }
+    55% { transform: translate(300%,300%); }
+    75% { transform: translate(0%,300%); }
+    80% { transform: translate(0%,300%); }
+    100% { transform: translate(0%,0%); }
+ }
+ 
+ .container-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .morphing-circle {
+    height: 25%;
+    width: 25%;
+    background-color: red;	
+    animation: morphing-circle-square 3s linear infinite;
+ }
+ 
+ @keyframes morphing-circle-square {
+     0% {border-radius: 50%}
+     50% {
+         border-radius: 0%;
+         background-color: white;      
+         transform: rotate(0deg);
+     }
+     75% {
+        border-radius: 0%;
+        background-color: white;
+        transform: rotate(90deg);    
+     }
+     100% {
+        border-radius: 50%;
+        background-color: red;
+        transform: rotate(90deg);
+     }
+  }
+ 
+ .container-three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .splitting-container {
+    background-color: teal;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+ }
+ 
+ .splitting-circle-left {
+    height: 100%;
+    width: 50%;
+    background-color: teal;	
+    overflow: hidden;
+    animation: splitting-circle-square-left 3s linear infinite;
+ }
+ 
+ .splitting-circle-right {
+    height: 100%;
+    width: 50%;
+    background-color: teal;	
+    overflow: hidden;
+    animation: splitting-circle-square-right 3s linear infinite;
+ }
+ 
+ .circle-left {
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    border-radius: 50%;
+    transform: translateX(50%);
+ }
+ 
+ .circle-right {
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    border-radius: 50%;
+    transform: translateX(-50%);
+ }
+ 
+ @keyframes splitting-circle-square-left {
+     0% {
+        transform: translateX(0);
+     }
+     25% { 
+        transform: translateX(0);
+     }
+     50% { 
+        transform: translateX(-50%);
+     }
+     75% {
+        transform: translateX(-50%);  
+     }
+     100% { 
+        transform: translateX(0);
+     }
+  }
+ 
+ @keyframes splitting-circle-square-right {
+     0% {
+        transform: translateX(0);
+     }
+     25% { 
+        transform: translateX(0);
+     }
+     50% { 
+        transform: translateX(50%);
+     }
+     75% {
+        transform: translateX(50%);  
+     }
+     100% { 
+        transform: translateX(0);
+     }
+  }
+ 
+ .container-four {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .beating-circle {
+    height: 25%;
+    width: 25%;
+    background-color: red;	
+    border-radius: 50%;
+    animation: beating-circle-square 3s linear infinite;
+ }
+ 
+ @keyframes beating-circle-square {
+     0% {width: 25%; height: 25%; background-color: red;}
+     22% {width: 25%; height: 25%;}    
+     25% {width: 30%; height: 30%;}
+     28% {width: 25%; height: 25%;}
+     31% {width: 30%; height: 30%;}
+     34% {width: 25%; height: 25%;}
+   
+     87% {width: 25%; height: 25%;}
+     90% {width: 30%; height: 30%;}
+     93% {width: 25%; height: 25%;}
+     95% {width: 30%; height: 30%;}
+     98% {width: 25%; height: 25%;}
+  }
+ 
+ 

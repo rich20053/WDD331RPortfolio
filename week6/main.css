@@ -1,0 +1,79 @@
+/*$cardfill-color: white;
+$cardedge-color: black;
+$honey-color: gold;
+$honeycomb: goldenrod;
+$honeycomb-face: yellow;
+$heart-face-color: violet;
+
+.playingcard {
+  fill: $cardfill-color;
+  stroke: $cardedge-color;
+  stroke-width: 2px;
+}
+
+#hex {
+  fill: $honey-color;
+  stroke: $honeycomb;
+  stroke-width: 2px;
+}
+
+.hexface {
+  fill: $honeycomb-face;
+}
+
+.hctext {
+  stroke: $cardedge-color;
+}
+
+.heartface {
+  fill: $heart-face-color;
+}
+
+.heartcircle {
+  fill: blue;
+  stroke: yellow;
+  stroke-width: 20px;
+}
+
+#heartsymbol {
+  fill: pink;
+  stroke: red;
+  stroke-width: 2px;
+}
+*/
+
+.playingcard {
+  fill: white;
+  stroke: black;
+  stroke-width: 2px;
+}
+
+#hex {
+  fill: gold;
+  stroke: goldenrod;
+  stroke-width: 2px;
+}
+
+.hexface {
+  fill: yellow;
+}
+
+.hctext {
+  stroke: black;
+}
+
+.heartface {
+  fill: violet;
+}
+
+.heartcircle {
+  fill: blue;
+  stroke: yellow;
+  stroke-width: 20px;
+}
+
+#heartsymbol {
+  fill: pink;
+  stroke: red;
+  stroke-width: 2px;
+}
